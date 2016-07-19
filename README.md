@@ -1,6 +1,6 @@
 # libmagic-crystal
 
-TODO: Write a description here
+Crystal bindings for libmagic.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   libmagic-crystal:
-    github: [your-github-name]/libmagic-crystal
+    github: pablotron/libmagic-crystal
 ```
 
 
@@ -18,11 +18,14 @@ dependencies:
 
 
 ```crystal
-require "libmagic-crystal"
+require "magic"
+
+# create magic bindings
+magic = Magic::Magic.new
+
+# get mime type of file
+mime_type = magic.file("/path/to/some/file")
 ```
-
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -38,4 +41,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Paul Duncan - creator, maintainer
+- [pablotron](https://github.com/pablotron) Paul Duncan - creator, maintainer
