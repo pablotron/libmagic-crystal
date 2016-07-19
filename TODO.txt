@@ -1,0 +1,6 @@
+0.1.0 is a minimal release for other folks to use, the following
+still needs to be done:
+
+[ ] api documentation
+[ ] tests
+[ ] bind methods other than "file"
