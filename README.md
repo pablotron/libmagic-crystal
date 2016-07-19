@@ -18,7 +18,7 @@ dependencies:
 
 
 ```crystal
-require "magic"
+require "libmagic-crystal/magic"
 
 # create magic bindings
 magic = Magic::Magic.new
